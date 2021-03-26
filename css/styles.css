@@ -131,7 +131,16 @@ header {
   color: #000000;
 }
 
+.header-icon {
+  margin-right: 10px;
+
+}
+
 .nav-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,8 +150,13 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #188ce8;
+  color: var(--akcent-color);
 }
+.nav-link:hover .header-icon,
+.nav-link:focus .header-icon {
+  fill: var(--akcent-color);
+}
+
 
 .current {
   color: var(--akcent-color);
@@ -327,11 +341,31 @@ header {
 .principles-list {
   display: flex;
   margin: 0;
+  margin-left: calc( -1 * var(--card-set-gap));
+
 }
 
 .principles-item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
+}
+
+.principles-icons {
+
+ 
+  
+} 
+
+.principles-container-icons {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  
+  
 }
 
 .subtitle {
@@ -444,7 +478,6 @@ header {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  
 
 }
 
@@ -455,7 +488,6 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-color: tomato; */
 
 }
 
@@ -474,6 +506,7 @@ header {
   fill: var(--white-text-color);
   background-color: var(--akcent-color);
 }
+
 /* КЛИЕНТЫ */
 .clients {
   padding-top: 94px;
