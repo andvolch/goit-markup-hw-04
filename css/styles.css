@@ -543,8 +543,13 @@ header {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  
 }
 
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
 .footer-contacts {
   display: inline-block;
   justify-content: left;
@@ -555,6 +560,7 @@ header {
 }
 
 .footer-list {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -567,9 +573,19 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+
+}
+
+/* ФУТЕР БЛОК2 */
 .footer-social-links {
   display: inline-block;
-  justify-content: start;
+  margin-left: 70px;
+  
+  
+  
+  
  
 }
 
@@ -580,4 +596,8 @@ header {
 .social-icons-link .footer-icons {
   fill: var(--main-background-color);
   
+}
+
+.footer-soclink {
+  background-color: rgba(255, 255, 255, 0.1);
 }
