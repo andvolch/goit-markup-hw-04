@@ -164,13 +164,23 @@ header {
 
 /* ГЕРОЙ */
 .hero {
+  /* display: flex; */
+  max-width: 1600px;
+  /* height: 100vh; */
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url(../images/geroy/Img-header.jpg);
+  background-repeat: no-repeat;
+  background-color:#C4C4C4;
+  background-size: contain;
+  background-position: center;
+  
 }
 
-.hero {
-  background-color:#2F303A;
-}
+
 
 .hero-title {
   font-weight: 900;
@@ -250,6 +260,7 @@ header {
 .button-filter:focus {
   background-color: var(--akcent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 } 
 
 
@@ -279,6 +290,12 @@ header {
   border: 1px solid #EEEEEE;
 }
 
+.item:hover,
+.item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .potfolio-text {
   padding: 20px 24px;
 }
@@ -302,34 +319,9 @@ header {
 }
 
 
-/* ФУТЕР */
-.basement {
-  background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
-.footer-container {
-  display: inline-block;
-  justify-content: left;
-  
-}
-.footer-studio {
-  color: var(--white-text-color);
-}
 
-.footer-list {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: var(--spacing);
-  color: #FFFFFF;
-}
 
-.social-list {
-  color: rgba(255, 255, 255, 0.6);
-}
 
 
 /* ПРИНЦИПЫ */
@@ -350,12 +342,6 @@ header {
   margin-left: var(--card-set-gap);
 }
 
-.principles-icons {
-
- 
-  
-} 
-
 .principles-container-icons {
   display: flex;
   margin-bottom: 30px;
@@ -364,8 +350,7 @@ header {
   min-width: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
-  
-  
+    
 }
 
 .subtitle {
@@ -421,7 +406,6 @@ header {
   align-items: center;
 }
 
-
 .team-list {
   display: flex;
   padding: 0;
@@ -463,8 +447,6 @@ header {
   letter-spacing: var(--spacing)
   color: var(--secondary-text-color);
 }
-
-
 
 .social-icons {
   display: flex;
@@ -555,3 +537,47 @@ header {
 }
 
 
+/* ФУТЕР */
+.basement {
+  display: flex;
+  background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-contacts {
+  display: inline-block;
+  justify-content: left;
+  
+}
+.footer-studio {
+  color: var(--white-text-color);
+}
+
+.footer-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--spacing);
+  color: #FFFFFF;
+}
+
+.social-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social-links {
+  display: inline-block;
+  justify-content: start;
+ 
+}
+
+.footer-social-links > .subtitle {
+  color: #ffffff;
+}
+
+.social-icons-link .footer-icons {
+  fill: var(--main-background-color);
+  
+}
