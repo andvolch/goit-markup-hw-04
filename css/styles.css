@@ -187,8 +187,6 @@ header {
   
 }
 
-
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -199,11 +197,9 @@ header {
   color: var(--white-text-color);
 }
 
-
 /* КНОПКИ */
 .filters-section {
-  padding-top: 102px;
-  
+  padding-top: 102px;  
 }
 
 .filters-container {
@@ -328,7 +324,7 @@ header {
 
 /* ПРИНЦИПЫ */
 .principles-section {
-  padding-top: 85px;
+  padding-top: 94px;
   padding-bottom: 0;
 }
 
