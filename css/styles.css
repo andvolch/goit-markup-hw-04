@@ -97,8 +97,8 @@ p {
 }
 
 header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -317,12 +317,6 @@ header {
   letter-spacing: var(--spacing);
   color: var(--secondary-text-color);
 }
-
-
-
-
-
-
 
 /* ПРИНЦИПЫ */
 .principles-section {
@@ -582,11 +576,6 @@ header {
 .footer-social-links {
   display: inline-block;
   margin-left: 70px;
-  
-  
-  
-  
- 
 }
 
 .footer-social-links > .subtitle {
