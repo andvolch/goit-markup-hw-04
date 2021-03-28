@@ -344,13 +344,17 @@ header {
 
 .principles-container-icons {
   display: flex;
-  margin-bottom: 30px;
+  min-height: 120px;
   justify-content: center;
   align-items: center;
-  min-width: 120px;
+  margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
     
+}
+.principles-icons {
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
