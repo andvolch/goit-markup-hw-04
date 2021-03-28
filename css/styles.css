@@ -182,7 +182,7 @@ header {
   url(../images/geroy/Img-header.jpg);
   background-repeat: no-repeat;
   background-color:#C4C4C4;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   
 }
@@ -240,6 +240,7 @@ header {
   color: var(--white-text-color);
   background-color: var(--akcent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
